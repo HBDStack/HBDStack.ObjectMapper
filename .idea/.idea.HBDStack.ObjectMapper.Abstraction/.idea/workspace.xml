@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="464a7b9d-bdb3-4a69-8f0f-40c4dec6ada5" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/HBDStack.ObjectMapper.Abstraction.sln" beforeDir="false" afterPath="$PROJECT_DIR$/HBDStack.ObjectMapper.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HBDStack.ObjectMapper.Abstraction.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/HBDStack.ObjectMapper.Abstraction.sln.DotSettings.user" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2GCNNkQUuyWT3RHS9rb55Ctfkf1" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true"
+  },
+  "keyToStringList": {
+    "rider.external.source.directories": [
+      "/Users/baoduy2412/Library/Application Support/JetBrains/Rider2022.3/resharper-host/DecompilerCache",
+      "/Users/baoduy2412/Library/Application Support/JetBrains/Rider2022.3/resharper-host/SourcesCache",
+      "/Users/baoduy2412/.local/share/Symbols/src"
+    ]
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="464a7b9d-bdb3-4a69-8f0f-40c4dec6ada5" name="Changes" comment="" />
+      <created>1665888567851</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1665888567851</updated>
+      <workItem from="1665888568888" duration="22000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="VcsManagerConfiguration">
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+</project>
