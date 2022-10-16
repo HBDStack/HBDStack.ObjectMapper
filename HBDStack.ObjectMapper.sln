@@ -16,7 +16,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HBDStack.ObjectMapper.Mapst
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SolutionItems", "SolutionItems", "{31CAA347-0EB7-4F57-88CA-D6932E561212}"
 	ProjectSection(SolutionItems) = preProject
-		..\.gitignore = ..\.gitignore
+		.gitignore = .gitignore
+		global.json = global.json
+		nuget.config = nuget.config
+		README.md = README.md
 	EndProjectSection
 EndProject
 Global
