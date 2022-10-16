@@ -1,0 +1,56 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HBDStack.ObjectMapper.Abstraction", "HBDStack.ObjectMapper.Abstraction\HBDStack.ObjectMapper.Abstraction.csproj", "{8B035F9F-950F-4D44-B00E-620B6DEFF64B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HBDStack.ObjectMapper.AutoMapper", "HBDStack.ObjectMapper.AutoMapper\HBDStack.ObjectMapper.AutoMapper.csproj", "{070C6BB1-C18B-4AE9-9091-BA61C3099DA0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HBDStack.ObjectMapper.Mapster", "HBDStack.ObjectMapper.Mapster\HBDStack.ObjectMapper.Mapster.csproj", "{C321CE47-A047-4E31-9B28-64802C2DC333}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Projects", "Projects", "{A4403CCB-23EF-4F80-8473-3DA72467D11A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{97C40739-8C5A-4F37-8881-C587FB8E956D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HBDStack.ObjectMapper.AutoMapper.Tests", "HBDStack.ObjectMapper.AutoMapper.Tests\HBDStack.ObjectMapper.AutoMapper.Tests.csproj", "{3B2F2B29-9C44-43AB-B123-E7CC6D046EDE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HBDStack.ObjectMapper.Mapster.Tests", "HBDStack.ObjectMapper.Mapster.Tests\HBDStack.ObjectMapper.Mapster.Tests.csproj", "{7E61DB4C-499E-411F-A9F1-61375B8C48A8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SolutionItems", "SolutionItems", "{31CAA347-0EB7-4F57-88CA-D6932E561212}"
+	ProjectSection(SolutionItems) = preProject
+		..\.gitignore = ..\.gitignore
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8B035F9F-950F-4D44-B00E-620B6DEFF64B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B035F9F-950F-4D44-B00E-620B6DEFF64B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B035F9F-950F-4D44-B00E-620B6DEFF64B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B035F9F-950F-4D44-B00E-620B6DEFF64B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{070C6BB1-C18B-4AE9-9091-BA61C3099DA0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{070C6BB1-C18B-4AE9-9091-BA61C3099DA0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{070C6BB1-C18B-4AE9-9091-BA61C3099DA0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{070C6BB1-C18B-4AE9-9091-BA61C3099DA0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C321CE47-A047-4E31-9B28-64802C2DC333}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C321CE47-A047-4E31-9B28-64802C2DC333}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C321CE47-A047-4E31-9B28-64802C2DC333}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C321CE47-A047-4E31-9B28-64802C2DC333}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3B2F2B29-9C44-43AB-B123-E7CC6D046EDE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B2F2B29-9C44-43AB-B123-E7CC6D046EDE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B2F2B29-9C44-43AB-B123-E7CC6D046EDE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B2F2B29-9C44-43AB-B123-E7CC6D046EDE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7E61DB4C-499E-411F-A9F1-61375B8C48A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E61DB4C-499E-411F-A9F1-61375B8C48A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E61DB4C-499E-411F-A9F1-61375B8C48A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E61DB4C-499E-411F-A9F1-61375B8C48A8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{8B035F9F-950F-4D44-B00E-620B6DEFF64B} = {A4403CCB-23EF-4F80-8473-3DA72467D11A}
+		{070C6BB1-C18B-4AE9-9091-BA61C3099DA0} = {A4403CCB-23EF-4F80-8473-3DA72467D11A}
+		{C321CE47-A047-4E31-9B28-64802C2DC333} = {A4403CCB-23EF-4F80-8473-3DA72467D11A}
+		{3B2F2B29-9C44-43AB-B123-E7CC6D046EDE} = {97C40739-8C5A-4F37-8881-C587FB8E956D}
+		{7E61DB4C-499E-411F-A9F1-61375B8C48A8} = {97C40739-8C5A-4F37-8881-C587FB8E956D}
+	EndGlobalSection
+EndGlobal

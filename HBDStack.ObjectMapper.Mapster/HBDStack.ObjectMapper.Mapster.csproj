@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <Copyright>@drunkcoding.net 2025</Copyright>
+        <Description>The wrapper of Mapster</Description>
+        <PackageLicense>https://opensource.org/licenses/MIT</PackageLicense>
+        <RepositoryUrl>https://github.com/HBDStack/HBDStack.ObjectMapper</RepositoryUrl>
+        <RepositoryType>git</RepositoryType>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+        <Owners>Duy Hoang</Owners>
+        <PackageTags>ObjectMapper, Mapster</PackageTags>
+        <LangVersion>default</LangVersion>
+        <TargetFramework>net6.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <PackageVersion />
+        <PackageProjectUrl>https://github.com/HBDStack/HBDStack.ObjectMapper</PackageProjectUrl>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Mapster" Version="7.3.0" />
+      <PackageReference Include="Mapster.DependencyInjection" Version="1.0.0" />
+      <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="6.0.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\HBDStack.ObjectMapper.Abstraction\HBDStack.ObjectMapper.Abstraction.csproj" />
+    </ItemGroup>
+
+</Project>

@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <Copyright>@drunkcoding.net 2025</Copyright>
+        <Description>The wrapper of AutoMapper and Mapster</Description>
+        <PackageLicense>https://opensource.org/licenses/MIT</PackageLicense>
+        <RepositoryUrl>https://github.com/HBDStack/HBDStack.ObjectMapper</RepositoryUrl>
+        <RepositoryType>git</RepositoryType>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+        <Owners>Duy Hoang</Owners>
+        <PackageTags>ObjectMapper, AutoMapper, Mapster</PackageTags>
+        <LangVersion>default</LangVersion>
+        <TargetFramework>net6.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <PackageVersion />
+        <PackageProjectUrl>https://github.com/HBDStack/HBDStack.ObjectMapper</PackageProjectUrl>
+    </PropertyGroup>
+
+</Project>
