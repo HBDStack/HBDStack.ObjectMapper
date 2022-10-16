@@ -1,0 +1,25 @@
+name: .NET
+
+on:
+  push:
+    branches:
+      - '**'
+
+jobs:
+  dotnet_pack_release_job:
+    uses: HBDStack/ShareWorkflows/.github/workflows/dotnet-package-release.yml@main
+    with:
+      Project_Path: 'HBDStack.ObjectMapper.sln'
+      Enable_Release: ${{ github.ref == 'refs/heads/main' }}
+      Enable_Nuget_Release: ${{ github.ref  == 'refs/heads/main'}}
+    secrets:
+      PACKAGE_TOKEN: ${{ secrets.PACKAGE_TOKEN }}
+      NUGET_PACKAGE_TOKEN: ${{ secrets.NUGET_PACKAGE_TOKEN }}
+      
+  dotnet_sonar_scan:
+    uses: HBDStack/ShareWorkflows/.github/workflows/sonar-build.yml@main
+    with:
+      Project_Path: 'HBDStack.ObjectMapper.sln'
+      Project_Name: 'HBDStack_HBDStack.ObjectMapper'
+    secrets:
+      SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
