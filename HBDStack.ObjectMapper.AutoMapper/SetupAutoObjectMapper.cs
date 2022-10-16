@@ -9,10 +9,14 @@ public static class SetupAutoObjectMapper
 {
     public static IServiceCollection AddAutoObjectMapper(this IServiceCollection services, Action<IMapperConfigurationExpression>? autoMapperConfig = null,params Assembly[] profileAssemblies )
     {
-        autoMapperConfig ??= cf => cf.ShouldUseConstructor = f => f.IsPublic;
-        
+        if (services.All(t => t.ServiceType != typeof(IMapper)))
+        {
+            autoMapperConfig ??= cf => cf.ShouldUseConstructor = f => f.IsPublic;
+            services
+                .AddAutoMapper(autoMapperConfig, profileAssemblies);
+        }
+
         return services
-            .AddAutoMapper(autoMapperConfig, profileAssemblies)
             .AddTransient<IObjectMapper,AutoObjectMapper>();
     }
 }

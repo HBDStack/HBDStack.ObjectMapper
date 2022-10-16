@@ -10,13 +10,14 @@ public static class SetupObjectMapster
 {
     public static IServiceCollection AddMapsterObjectMapper(this IServiceCollection services, TypeAdapterConfig? config=null )
     {
-        if (services.Any(t => t.ServiceType == typeof(IMapper))) return services;
-        
-        config ??= TypeAdapterConfig.GlobalSettings;
-        
-        services.AddSingleton(config);
-        services.AddScoped<IMapper, ServiceMapper>();
-        
+        if (services.All(t => t.ServiceType != typeof(IMapper)))
+        {
+            config ??= TypeAdapterConfig.GlobalSettings;
+
+            services.AddSingleton(config);
+            services.AddScoped<IMapper, ServiceMapper>();
+        }
+
         return services.AddScoped<IObjectMapper,MapsterObjectMapper>();
     }
     

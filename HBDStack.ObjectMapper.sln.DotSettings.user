@@ -1,9 +1,4 @@
 ﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=e0103189_002Dc2f0_002D40fb_002Da380_002D9ccf49cb9e88/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="CustomerMap" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
-  &lt;Or&gt;
-    &lt;TestAncestor&gt;
-      &lt;TestId&gt;xUnit::3B2F2B29-9C44-43AB-B123-E7CC6D046EDE::net6.0::HBDStack.ObjectMapper.AutoMapper.Tests.AutoMapperTests&lt;/TestId&gt;
-    &lt;/TestAncestor&gt;
-    &lt;Project Location="/Volumes/VMs_2T/_GIT/HBDStack.ObjectMapper/HBDStack.ObjectMapper.Abstraction/HBDStack.ObjectMapper.Mapster.Tests" Presentation="&amp;lt;Tests&amp;gt;\&amp;lt;HBDStack.ObjectMapper.Mapster.Tests&amp;gt;" /&gt;
-  &lt;/Or&gt;
+  &lt;Solution /&gt;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
