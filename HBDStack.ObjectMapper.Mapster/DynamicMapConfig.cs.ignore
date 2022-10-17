@@ -1,0 +1,21 @@
+using System.Reflection;
+using Mapster;
+
+namespace HBDStack.ObjectMapper.Mapster;
+
+public class DynamicMapConfig
+{
+    private readonly TypeAdapterConfig _config;
+
+    public DynamicMapConfig(TypeAdapterConfig config) => _config = config;
+
+    public DynamicMapConfig MapFrom(Assembly assembly, string @namespace)
+    {
+        return this;
+    }
+    
+    public DynamicMapConfig MapTo(Assembly assembly, string @namespace)
+    {
+        return this;
+    }
+}

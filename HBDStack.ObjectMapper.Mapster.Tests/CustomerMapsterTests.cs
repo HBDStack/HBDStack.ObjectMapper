@@ -7,11 +7,11 @@ using Microsoft.Extensions.DependencyInjection;
 
 namespace HBDStack.ObjectMapper.Mapster.Tests;
 
-public class MapsterMapperTests:IClassFixture<MapsterMapFixture>
+public class CustomerMapsterTests:IClassFixture<MapsterMapFixture>
 {
     private readonly MapsterMapFixture _fixture;
 
-    public MapsterMapperTests(MapsterMapFixture fixture) => _fixture = fixture;
+    public CustomerMapsterTests(MapsterMapFixture fixture) => _fixture = fixture;
 
     [Fact]
     public void ConfigurationProvider()
@@ -25,7 +25,6 @@ public class MapsterMapperTests:IClassFixture<MapsterMapFixture>
     {
         var mapper = _fixture.Provider.GetRequiredService<IObjectMapper>();
         var cus = AutoFaker.Generate<Customer>();
-
         var rs = mapper.Map<CustomerDTO>(cus);
 
         rs.Id.Should().Be(cus.Id).And.Subject.Value.Should().NotBe(0);
@@ -38,7 +37,6 @@ public class MapsterMapperTests:IClassFixture<MapsterMapFixture>
     {
         var mapper = _fixture.Provider.GetRequiredService<IObjectMapper>();
         var cus = AutoFaker.Generate<Customer>();
-
         var rs = mapper.Map<Customer, CustomerDTO>(cus);
 
         rs.Id.Should().Be(cus.Id).And.Subject.Value.Should().NotBe(0);
@@ -64,7 +62,6 @@ public class MapsterMapperTests:IClassFixture<MapsterMapFixture>
     {
         var mapper = _fixture.Provider.GetRequiredService<IObjectMapper>();
         var cus = AutoFaker.Generate<Customer>();
-
         var rs =(CustomerDTO) mapper.Map(cus,typeof(Customer),typeof(CustomerDTO));
 
         rs.Id.Should().Be(cus.Id).And.Subject.Value.Should().NotBe(0);
@@ -83,5 +80,16 @@ public class MapsterMapperTests:IClassFixture<MapsterMapFixture>
         rs.Id.Should().Be(cus.Id).And.Subject.Value.Should().NotBe(0);
         rs.Name.Should().Be(cus.Name).And.Subject.Should().NotBeNullOrEmpty();
         rs.AddressCountry.Should().Be(cus.Address.Country).And.Subject.Should().NotBeNullOrEmpty();
+    }
+    
+    [Fact]
+    public void CustomerRevertMap()
+    {
+        var mapper = _fixture.Provider.GetRequiredService<IObjectMapper>();
+        var cus = AutoFaker.Generate<CustomerDTO>();
+        var rs = mapper.Map<Customer>(cus);
+
+        rs.Id.Should().Be(cus.Id).And.Subject.Value.Should().NotBe(0);
+        rs.Name.Should().Be(cus.Name).And.Subject.Should().NotBeNullOrEmpty();
     }
 }

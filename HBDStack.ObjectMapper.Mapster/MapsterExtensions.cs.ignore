@@ -1,0 +1,8 @@
+using Mapster;
+
+namespace HBDStack.ObjectMapper.Mapster;
+
+public static class MapsterExtensions
+{
+    public static DynamicMapConfig DynamicMap(this TypeAdapterConfig config) => new (config);
+}

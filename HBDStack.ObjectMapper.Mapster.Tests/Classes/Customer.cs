@@ -10,16 +10,14 @@ public class Customer
     public Address Address { get; set; }
 }
 
-public class CustomerDTO
+public class CustomerDTO:BaseDto<CustomerDTO,Customer>
 {
     public int Id { get; set; }
     public string Name { get; set; }
     public string AddressCountry { get; set; }
-}
-
-internal class CustomerRegister:IRegister{
-    public void Register(TypeAdapterConfig config)
+    
+    protected override void Config()
     {
-        config.ForType<Customer, CustomerDTO>().TwoWays();
+        ConfigDto();
     }
 }

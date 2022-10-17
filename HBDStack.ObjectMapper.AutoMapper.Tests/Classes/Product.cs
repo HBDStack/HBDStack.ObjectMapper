@@ -9,7 +9,7 @@ public class Product
     public int AmountInStock { get; set; }
 
     public DateTime CreatedDate { get; set; }
-    public Nullable<DateTime> ModifiedDate { get; set; }
+    public DateTime? ModifiedDate { get; set; }
     public User CreatedUser { get; set; }
     public User ModifiedUser { get; set; }
 
@@ -24,7 +24,7 @@ public class User
     public string Email { get; set; }
 
     public DateTime CreatedDate { get; set; }
-    public Nullable<DateTime> ModifiedDate { get; set; }
+    public DateTime? ModifiedDate { get; set; }
 }
 
 public class OrderLine
@@ -76,7 +76,7 @@ public class ProductListDTO
     public int AmountInStock { get; set; }
 
     public DateTime CreatedDate { get; set; }
-    public Nullable<DateTime> ModifiedDate { get; set; }
+    public DateTime? ModifiedDate { get; set; }
     public string CreatedUserName { get; set; }
     public string ModifiedUserName { get; set; }
 }
